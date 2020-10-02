@@ -35,7 +35,7 @@ public class LoginController {
             model.addAttribute("customertitle",
                     matchingCustomer.getName() + "Bank Accounts");
             model.addAttribute("bankaccounts",
-                    bankAccountService.getCustomerAccounts(customer.getId()));
+                    bankAccountService.getCustomerBankAccount(customer.getId()));
 
             return "customeraccount";
         }
