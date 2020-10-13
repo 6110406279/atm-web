@@ -33,7 +33,7 @@ public class LoginController {
 
         if(matchingCustomer!=null){
             model.addAttribute("customertitle",
-                    matchingCustomer.getName() + "Bank Accounts");
+                    matchingCustomer.getName() + " Bank Accounts");
             model.addAttribute("bankaccounts",
                     bankAccountService.getCustomerBankAccount(customer.getId()));
 
@@ -48,4 +48,7 @@ public class LoginController {
 
 
     }
+
+
+
 }
